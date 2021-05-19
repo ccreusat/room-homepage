@@ -158,19 +158,23 @@
     </div>
   </main>
 
-  <!-- <div class="attribution">
+  <button id="attribution-trigger">&#128587;</button>
+
+  <div class="attribution">
 			Challenge by
 			<a
 				href="https://www.frontendmentor.io?ref=challenge"
 				target="_blank"
 				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
-		</div> -->
+			>. Coded by <a href="https://github.com/ccreusat">Clement Creusat</a>.
+		</div>
 
   <script>
-    document.addEventListener( "DOMContentLoaded", function() {
-      slider();
-    });
+    document.addEventListener("DOMContentLoaded", () => Slider());
+
+    document.getElementById('attribution-trigger').addEventListener('click', () => {
+      document.querySelector('.attribution').classList.toggle("visible");
+    })
   </script>
 </body>
 

@@ -1,4 +1,4 @@
-function slider() {
+function Slider() {
 	"use strict";
 	// Get Triggers
 	const prev = document.getElementById('prev');
@@ -124,6 +124,11 @@ function slider() {
 	/// Click Events
 	prev.addEventListener('click', () => moveSlide(-1));
 	next.addEventListener('click', () => moveSlide(1));
+	/// Key Event
+	document.addEventListener('keydown', (e) => {
+		if (e.key === "ArrowLeft") moveSlide(-1);
+		if (e.key === "ArrowRight") moveSlide(1);
+	});
 	/// Touch Events
 	slideWrapper.addEventListener('touchstart', dragStart);
 	slideWrapper.addEventListener('touchmove', dragAction);
@@ -133,6 +138,7 @@ function slider() {
 	matchMedia();
 	onResize();
 
+	// Checking Media Query on resize
 	mediaQueryMAX.addEventListener("change", matchMedia);
 	mediaQueryMIN.addEventListener("change", matchMedia);
 }
