@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution page](https://your-solution-url.com)
+- Solution URL: [Solution page](https://www.frontendmentor.io/solutions/room-homepage-css-grid-fully-responsive-and-homemade-vanilla-js-slider-zH5XupfId)
 - Live Site URL: [Live site](http://ccreusat-room-homepage.vercel.app/)
 
 ## My process
