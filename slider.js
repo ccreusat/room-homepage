@@ -3,6 +3,9 @@ function slider() {
 	// Get Triggers
 	const prev = document.getElementById('prev');
 	const next = document.getElementById('next');
+	// Touches Triggers
+	let touchStartX = 0;
+	let touchEndX = 0;
 	// Set all variables related to the slides component
 	const slideWrapper = document.getElementById('slider-image');
 	const slides = document.querySelectorAll('.slide');
@@ -96,8 +99,35 @@ function slider() {
 		});
 	}
 
+	function dragStart(e) {
+		touchStartX = e.touches[0].clientX;
+	}
+
+	function dragAction(e) {
+		touchEndX = e.touches[0].clientX;
+	}
+
+	function dragEnd() {
+		handleGesture();
+	}
+
+	function handleGesture() {
+		if (touchEndX < touchStartX) {
+			moveSlide(1)
+		}
+		if (touchEndX > touchStartX) {
+			moveSlide(-1)
+		}
+	}
+
+	// Events
+	/// Click Events
 	prev.addEventListener('click', () => moveSlide(-1));
 	next.addEventListener('click', () => moveSlide(1));
+	/// Touch Events
+	slideWrapper.addEventListener('touchstart', dragStart);
+	slideWrapper.addEventListener('touchmove', dragAction);
+	slideWrapper.addEventListener('touchend', dragEnd);
 
 	addClones();
 	matchMedia();
