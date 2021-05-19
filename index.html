@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="slider.css" />
   <script src="slider.js"></script>
 
   <title>Frontend Mentor | Room homepage</title>
@@ -47,8 +48,8 @@
     </header>
 
     <div class="grid">
-      <div class="slider-image">
-        <div id="slider-image" class="slider-image__wrapper">
+      <div class="column-1">
+        <div id="slider-image" class="slider-image-inner">
           <div class="slide">
             <picture>
               <source srcset="./images/desktop-image-hero-1.jpg" media="(min-width: 376px)" />
@@ -70,52 +71,54 @@
         </div>
       </div>
 
-      <div class="slider-content">
-        <div id="slider-content" class="slider-content__wrapper">
-          <div class="content">
-            <h2>Discover innovative ways to decorate</h2>
-            <p>
-              We provide unmatched quality, comfort, and style for
-              property owners across the country. Our experts combine
-              form and function in bringing your vision to life.
-              Create a room in your own style with our collection and
-              make your property a reflection of you and what you
-              love.
-            </p>
-            <a href="/">Shop now<svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
-                  fill="#000" fill-rule="nonzero" /></svg></a>
-          </div>
-          <div class="content">
-            <h2>We are available all across the globe</h2>
-            <p>
-              We provide unmatched quality, comfort, and style for
-              property owners across the country. Our experts combine
-              form and function in bringing your vision to life.
-              Create a room in your own style with our collection and
-              make your property a reflection of you and what you
-              love.
-            </p>
-            <a href="/">Shop now<svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
-                  fill="#000" fill-rule="nonzero" /></svg></a>
-          </div>
-          <div class="content">
-            <h2>Manufactured with the best materials</h2>
-            <p>
-              We provide unmatched quality, comfort, and style for
-              property owners across the country. Our experts combine
-              form and function in bringing your vision to life.
-              Create a room in your own style with our collection and
-              make your property a reflection of you and what you
-              love.
-            </p>
-            <a href="/">Shop now<svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
-                  fill="#000" fill-rule="nonzero" /></svg></a>
+      <div class="column-2">
+        <div class="slider-content">
+          <div id="slider-content" class="slider-content-inner">
+            <div class="content">
+              <h2>Discover innovative ways to decorate</h2>
+              <p>
+                We provide unmatched quality, comfort, and style for
+                property owners across the country. Our experts combine
+                form and function in bringing your vision to life.
+                Create a room in your own style with our collection and
+                make your property a reflection of you and what you
+                love.
+              </p>
+              <a href="/">Shop now<svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                    fill="#000" fill-rule="nonzero" /></svg></a>
+            </div>
+            <div class="content">
+              <h2>We are available all across the globe</h2>
+              <p>
+                We provide unmatched quality, comfort, and style for
+                property owners across the country. Our experts combine
+                form and function in bringing your vision to life.
+                Create a room in your own style with our collection and
+                make your property a reflection of you and what you
+                love.
+              </p>
+              <a href="/">Shop now<svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                    fill="#000" fill-rule="nonzero" /></svg></a>
+            </div>
+            <div class="content">
+              <h2>Manufactured with the best materials</h2>
+              <p>
+                We provide unmatched quality, comfort, and style for
+                property owners across the country. Our experts combine
+                form and function in bringing your vision to life.
+                Create a room in your own style with our collection and
+                make your property a reflection of you and what you
+                love.
+              </p>
+              <a href="/">Shop now<svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                    fill="#000" fill-rule="nonzero" /></svg></a>
+            </div>
           </div>
         </div>
         <!-- slider arrows -->
@@ -134,10 +137,10 @@
         </div>
         <!-- ./ -->
       </div>
-      <div class="about-dark">
+      <div class="about-dark column-3">
         <img src="./images/image-about-dark.jpg" />
       </div>
-      <div class="about-furniture box flex">
+      <div class="about-furniture column-4">
         <h3>About our furniture</h3>
         <p>
           Our multifunctional collection blends design and
@@ -149,7 +152,7 @@
           available to help you create your dream space.
         </p>
       </div>
-      <div class="about-light">
+      <div class="about-light column-5">
         <img src="./images/image-about-light.jpg" />
       </div>
     </div>
